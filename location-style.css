@@ -1,0 +1,322 @@
+body {
+    background-color: black;
+    text-size-adjust: auto;
+
+}
+.grid-container {
+    display: grid;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 17px;
+    font-weight: bold;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.grid-container a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.grid-container :hover .grid-item {
+    font-size: 23px;
+}
+
+.grid-container .logo {
+    height: 102px;
+    width: 130px;
+    position: relative;
+    top: 2px;  
+}
+
+.grid-container :hover .logo {
+    height: 125px;
+    width: 167px;
+    top: 5px;
+}
+
+.grid-container .logo {
+    transition: all 0.2s ease-in ;
+}
+
+.grid-container :hover .grid-item {
+    transition: all 0.1s ease-in
+}
+
+h2 {
+    color: white;
+    font-family: monospace;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+
+.description {
+    font-family: monospace;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.distribution-map {
+    display: grid;
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+
+}
+
+.map-point {
+
+    cursor: pointer;
+    outline: none;
+    z-index: 4;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    translate: (-50%, -50%);
+    opacity: 0.8;
+    top: 340px;
+    left:420px;
+    text-align: center;  
+    font-family: monospace;
+
+
+}
+
+.map-point .logo {
+    height: 40px;
+    width: 50px;
+}
+
+
+.content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  translate: (-50%);
+  opacity: 0;
+}
+
+.market-pic {
+    height: 200px;
+    width: 300px;
+}
+
+.map-point:hover  {
+    width:300px;
+    height:auto;
+    border-radius: 10px;
+    padding:6px;
+    background-color:black;
+    color: white;
+    transition:all 0.4s ease 0s;
+    box-shadow:1px 1px white;
+    opacity: 0.8;
+    position: absolute;
+    left: 285px;
+    z-index: 5;
+
+
+  
+}
+
+.map-point:hover .content {
+    opacity: 1;
+    transition: all 0.6s ease 0.2s;
+    position: relative;
+    justify-items: right;
+
+}
+
+.winter-point {
+
+    cursor: pointer;
+    outline: none;
+    z-index: 4;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    translate: (-50%, -50%);
+    opacity: 0.8;
+    top: 470px;
+    left:380px;
+    text-align: center;  
+    font-family: monospace;
+}
+
+.winter-point .logo {
+    height: 40px;
+    width: 50px;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    translate: (-50%);
+    opacity: 0;
+  }
+  
+  .winter-pic {
+      height: 200px;
+      width: 300px;
+  }
+  
+  .winter-point:hover  {
+      width:300px;
+      height:auto;
+      border-radius: 10px;
+      padding:6px;
+      background-color:black;
+      color: white;
+      transition:all 0.4s ease 0s;
+      box-shadow:1px 1px white;
+      opacity: 0.8;
+      position: absolute;
+      left: 255px;
+      z-index: 5;
+  
+  
+    
+  }
+  
+  .winter-point:hover .content {
+      opacity: 1;
+      transition: all 0.6s ease 0.2s;
+      position: relative;
+      justify-items: right;
+  
+  }
+
+  .sb-point {
+
+    cursor: pointer;
+    outline: none;
+    z-index: 4;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    translate: (-50%, -50%);
+    opacity: 0.8;
+    top: 490px;
+    left:500px;
+    text-align: center;  
+    font-family: monospace;
+}
+
+.sb-point .logo {
+    height: 40px;
+    width: 50px;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    translate: (-50%);
+    opacity: 0;
+  }
+  
+  .sb-pic {
+      height: 200px;
+      width: 300px;
+  }
+  
+  .sb-point:hover  {
+      width:300px;
+      height:auto;
+      border-radius: 10px;
+      padding:6px;
+      background-color:black;
+      color: white;
+      transition:all 0.4s ease 0s;
+      box-shadow:1px 1px white;
+      opacity: 0.8;
+      position: absolute;
+      left: 355px;
+      z-index: 5;
+  
+  }
+  
+  .sb-point:hover .content {
+      opacity: 1;
+      transition: all 0.6s ease 0.2s;
+      position: relative;
+      justify-items: right;
+  
+  }
+
+
+  .fourpure-point {
+
+    cursor: pointer;
+    outline: none;
+    z-index: 4;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    translate: (-50%, -50%);
+    opacity: 0.8;
+    top: 560px;
+    left:680px;
+    text-align: center;  
+    font-family: monospace;
+}
+
+.fourpure-point .logo {
+    height: 40px;
+    width: 50px;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    translate: (-50%);
+    opacity: 0;
+  }
+  
+  .fourpure-pic {
+      height: 200px;
+      width: 300px;
+  }
+  
+  .fourpure-point:hover  {
+      width:300px;
+      height:auto;
+      border-radius: 10px;
+      padding:6px;
+      background-color:black;
+      color: white;
+      transition:all 0.4s ease 0s;
+      box-shadow:1px 1px white;
+      opacity: 0.8;
+      position: absolute;
+      left: 555px;
+      z-index: 5;
+  
+  }
+  
+  .fourpure-point:hover .content {
+      opacity: 1;
+      transition: all 0.6s ease 0.2s;
+      position: relative;
+      justify-items: right;
+  
+  }

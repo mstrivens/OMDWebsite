@@ -1,0 +1,342 @@
+body {
+    background-color: black;
+    text-size-adjust: auto;
+
+}
+.grid-container {
+    display: grid;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 17px;
+    font-weight: bold;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.grid-container a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.grid-container :hover .grid-item {
+    font-size: 23px;
+}
+
+.grid-container .logo {
+    height: 102px;
+    width: 130px;
+    position: relative; 
+}
+
+.grid-container :hover .logo {
+    height: 125px;
+    width: 167px;
+    top: 2px;
+}
+
+.grid-container .logo {
+    transition: all 0.2s ease-in ;
+}
+
+.grid-container :hover .grid-item {
+    transition: all 0.1s ease-in
+}
+
+img {
+    display: grid;
+    height: 600px;
+    width: 500px;
+    position: relative;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    color: white;
+    font-family: monospace;
+    text-align: center;
+}
+
+.yum {
+
+    cursor: pointer;
+    outline: none;
+    z-index: 10;
+    position: absolute;
+    translate: (-50%, -50%);
+    opacity: 0.8;
+    top: 332px;
+    left:292px;
+    text-align: center;  
+    font-family: monospace;
+}
+
+.yum .logo {
+    height: 15px;
+    width: 15px;
+    opacity: 0.8;
+}
+
+
+.content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  translate: (-50%);
+  opacity: 0;
+}
+
+.yum:hover  {
+    width:250px;
+    height:auto;
+    border-radius: 10px;
+    background-color:black;
+    color: white;
+    transition:all 0.4s ease 0s;
+    box-shadow:1px 1px white;
+    opacity: 1;
+    position: absolute;
+    left: 60px;
+    top: 220px;
+    z-index: 10;
+
+}
+
+.yum:hover .logo {
+    opacity: 0;
+}
+
+.yum:hover .content {
+    opacity: 1;
+    transition: all 0.6s ease 0.2s;
+    position: relative;
+    z-index: 6;
+
+}
+
+.bacon {
+
+    cursor: pointer;
+    outline: none;
+    z-index: 10;
+    position: absolute;
+    translate: (-50%, -50%);
+    opacity: 0.8;
+    top: 370px;
+    left:400px;
+    text-align: center;  
+    font-family: monospace;
+}
+
+.bacon .logo {
+    height: 15px;
+    width: 15px;
+    opacity: 0.8;
+}
+
+
+.content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  translate: (-50%);
+  opacity: 0;
+}
+
+.bacon:hover  {
+    width:250px;
+    height:auto;
+    border-radius: 10px;
+    background-color:black;
+    color: white;
+    transition:all 0.4s ease 0s;
+    box-shadow:1px 1px white;
+    opacity: 1;
+    position: absolute;
+    left: 400px;
+    top: 258px;
+    z-index: 10;
+
+}
+
+.bacon:hover .logo {
+    opacity: 0;
+}
+
+.bacon:hover .content {
+    opacity: 1;
+    transition: all 0.6s ease 0.2s;
+    position: relative;
+}
+
+.classic {
+
+    cursor: pointer;
+    outline: none;
+    z-index: 10;
+    position: absolute;
+    translate: (-50%, -50%);
+    opacity: 0.8;
+    top: 410px;
+    left:292px;
+    text-align: center;  
+    font-family: monospace;
+}
+
+.classic .logo {
+    height: 15px;
+    width: 15px;
+    opacity: 0.8;
+}
+
+
+.content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  translate: (-50%);
+  opacity: 0;
+}
+
+.classic:hover  {
+    width: 250px;
+    height:auto;
+    border-radius: 10px;
+    background-color:black;
+    color: white;
+    transition:all 0.4s ease 0s;
+    box-shadow:1px 1px white;
+    opacity: 1;
+    position: absolute;
+    left: 50px;
+    top: 410px;
+    z-index: 12;
+    padding: 5px;
+}
+
+.classic:hover .logo {
+    opacity: 0;
+}
+
+.classic:hover .content {
+    opacity: 1;
+    transition: all 0.6s ease 0.2s;
+    position: relative;
+}
+
+.veggie {
+
+    cursor: pointer;
+    outline: none;
+    z-index: 11;
+    position: absolute;
+    translate: (-50%, -50%);
+    opacity: 0.8;
+    top: 520px;
+    left:292px;
+    text-align: center;  
+    font-family: monospace;
+}
+
+.veggie .logo {
+    height: 15px;
+    width: 15px;
+    opacity: 0.8;
+}
+
+
+.content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  translate: (-50%);
+  opacity: 0;
+}
+
+.veggie:hover  {
+    width: 250px;
+    height:auto;
+    border-radius: 10px;
+    background-color:black;
+    color: white;
+    transition:all 0.4s ease 0s;
+    box-shadow:1px 1px white;
+    opacity: 1;
+    position: absolute;
+    left: 60px;
+    top: 410px;
+    z-index: 10;
+    padding: 5px;
+}
+
+.veggie:hover .logo {
+    opacity: 0;
+}
+
+.veggie:hover .content {
+    opacity: 1;
+    transition: all 0.6s ease 0.2s;
+    position: relative;
+}
+
+.fries {
+
+    cursor: pointer;
+    outline: none;
+    z-index: 11;
+    position: absolute;
+    translate: (-50%, -50%);
+    opacity: 0.8;
+    top: 592px;
+    left:292px;
+    text-align: center;  
+    font-family: monospace;
+}
+
+.fries .logo {
+    height: 15px;
+    width: 15px;
+    opacity: 0.8;
+}
+
+
+.content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  translate: (-50%);
+  opacity: 0;
+}
+
+.fries:hover  {
+    width: 250px;
+    height:auto;
+    border-radius: 10px;
+    background-color:black;
+    color: white;
+    transition:all 0.4s ease 0s;
+    box-shadow:1px 1px white;
+    opacity: 1;
+    position: absolute;
+    left: 40px;
+    top: 550px;
+    z-index: 10;
+    padding: 5px;
+}
+
+.fries:hover .logo {
+    opacity: 0;
+}
+
+.fries:hover .content {
+    opacity: 1;
+    transition: all 0.6s ease 0.2s;
+    position: relative;
+}

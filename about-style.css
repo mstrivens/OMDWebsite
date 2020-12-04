@@ -1,0 +1,74 @@
+body {
+    background-color: black;
+    text-size-adjust: auto;
+
+}
+.grid-container {
+    display: grid;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 17px;
+    font-weight: bold;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.grid-container a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.grid-container :hover .grid-item {
+    font-size: 23px;
+}
+
+.grid-container .logo {
+    height: 102px;
+    width: 130px;
+    position: relative;
+    top: 2px;  
+}
+
+.grid-container :hover .logo {
+    height: 125px;
+    width: 167px;
+    top: 5px;
+}
+
+.grid-container .logo {
+    transition: all 0.2s ease-in ;
+}
+
+.grid-container :hover .grid-item {
+    transition: all 0.1s ease-in
+}
+
+h2 {
+    color: white;
+    font-family: monospace;
+    position: relative;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-family: monospace;
+    position: relative;
+    text-align: center;
+    line-height: 2;
+}
+
+body {
+    
+}
+
+marquee {
+    height: 500px;
+    
+}
